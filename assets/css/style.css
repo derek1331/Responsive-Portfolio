@@ -212,7 +212,51 @@ html {
    overflow-y: scroll;
 }
 
+@media screen only and (max-width: 980px) {
 
+    .main-container{
+        padding-top: 10;
+
+    }
+  
+    #masterhead {
+        position: static;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    #main-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #masterhead {
+        position: absolute;
+    } 
+
+    .main-section {
+       
+        margin: 0 auto;
+    
+    } 
+
+    .sidebar { 
+    
+        margin: 10px auto;
+}
+
+  
+@media screen only and (max-width: 640px) {
+    
+    header {
+      position: static;
+    }
+  
+} 
+  
 
   
   
