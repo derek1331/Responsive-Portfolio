@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../images/dust.png');
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+    color: #fff;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+#masterhead {
+    background-color: #fff;
+    margin: 0 0 30px;
+    z-index: 99;
+    color: #fff;
+    overflow: auto;
+    border-bottom: 2px solid #cccccc; 
+    position: fixed;
+    width: 100%;
+}
+
+.logo{ 
+    width: 250px;
+    height: 90px;
+    background-color: #4aaaa5;
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    font-size: xx-large;
+    font-weight: Bolder;
+}
+
+nav { 
+    margin: 25px;
+    float: Right;
+}
+
+.more {  
+    border-right: none;
+    text-decoration: none;
+    color: #777777;
+    padding: 0px 10px;
+    border-right: 1px solid lightgrey;
+}
+
+.more:last-child {  
+    border-right: none;
+} 
+
+#main-container {
+    padding-top: 130px;
+   
+}
+
+.main-section { 
+    background: #fff;
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 650px;
+    float: left;
+    border: 1px solid #ddd; 
+    
+}
+
+.bio-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+
+.handsome {
+    border: 2px inset #ddd;
+}
+
+.sidebar {
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 270px;
+    float: right;
+    border: 1px solid #ddd;
+    word-wrap: initial;
+}
+
+.work {
+    float: left;
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    
+   
+}
+
+.work img {
+    clear: both;
+    width: 100%;
+    border: 0 none;
+    opacity: .8;
+}
+
+.work h3 {
+    border-bottom: 0;
+    background: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 300px;
+    
+}
+
+.marge {
+    margin: 0 0 25px 39px;
+}
+
+
+h4 { color: #4aaaa5;
+    font-size: 20px;
+    font-weight: Bolder;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+    text-align: center;
+}
+    
+h2 {
+    color: #4aaaa5;
+    font-size: 30px;
+    font-weight: Bolder;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.mail {
+    color: #777777;
+    font-size: 20px;
+    font-weight: Bolder;
+    text-decoration: none;
+}
+
+p {
+    color: #777777;
+    letter-spacing: 1px;
+    margin: 0px 20px 0px 0px;
+}
+
+.main-container{
+    overflow: hidden;
+}
+  
+.for {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 100%;
+    color: #666;
+
+}
+
+.wide {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.skinny {
+    height: 200px;
+    width: 100%;
+    max-width: 588px;
+    
+}
+
+.button {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+a.worklink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}
+
+footer {
+    background: #666;
+    color: #fff;
+    padding: 30px 0;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+}
+
+html {
+   overflow-y: scroll;
+}
+
+
+@media only screen and (max-width 980px) {
+   .container {
+       padding: 0 20px;
+   } 
+   #main-container {
+        padding-top: 130px;
+   }
+   .main-section {
+         max-width: 430px;
+   }
+   .work {
+         width: 100px;
+   }
+   .bio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-section, .sidebar {
+        max-width: 100%;
+    }
+     #main-container {
+        overflow: auto;
+    }
+    .sidebar {
+        margin-bottom: 40px;
+    }
+    .work {
+        width: 47;
+        margin-bottom: 10px;
+    }
+     .work:nth-child(even) {
+        margin-right: 0px;
+    }
+    .work:nth-child(odd) {
+        float: right;
+    }
+    .bio-image {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    #masterhead {
+        position: static;
+        margin-bottom: 20px;
+    }
+    header.container {
+        padding: 0;
+    }
+    #main-container {
+        padding-top: 0;
+    }
+    #logo, .work, .bio-image {
+        width: 100%;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+        margin: 15px 0;
+    }
+    nav a {
+        width: 30px;
+        padding-left: 0;
+        margin-left: 0;
+    
+    }
+}
+  
+  
